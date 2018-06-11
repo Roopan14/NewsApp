@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roopanc.newsapp.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin16"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zerodp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margin8"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/zerodp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/height128"
+                android:layout_margin="@dimen/margin8"
+                android:elevation="5dp"
+                android:id="@+id/businesscard"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/business"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height32"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="Business"
+                    android:layout_marginBottom="@dimen/margin8"
+                    android:textSize="@dimen/text24"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/zerodp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/height128"
+                android:layout_margin="@dimen/margin8"
+                android:elevation="5dp"
+                android:id="@+id/bitcoincard"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bitcoin"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height32"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin8"
+                    android:gravity="center"
+                    android:text="Bitcoin"
+                    android:textSize="@dimen/text24"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zerodp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margin8"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/zerodp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/height128"
+                android:layout_margin="@dimen/margin8"
+                android:elevation="5dp"
+                android:id="@+id/techcard"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/techcrunch"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height32"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="Tech Crunch"
+                    android:textSize="@dimen/text24"
+                    android:textColor="@color/colorGrey"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/zerodp"
+                android:layout_weight="1"
+                android:layout_height="128dp"
+                android:layout_margin="@dimen/margin8"
+                android:elevation="5dp"
+                android:id="@+id/applecard"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/apple"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin8"
+                    android:gravity="center"
+                    android:text="Apple"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
