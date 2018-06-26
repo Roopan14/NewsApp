@@ -9,8 +9,8 @@
     tools:context="com.example.roopanc.newsapp.SplashActivity">
 
     <ImageView
-        android:layout_width="@dimen/dp48"
-        android:layout_height="@dimen/dp48"
+        android:layout_width="@dimen/dpxlarge"
+        android:layout_height="@dimen/dpxlarge"
         android:src="@drawable/web"
         android:layout_centerInParent="true"
         />

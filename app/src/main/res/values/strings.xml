@@ -5,6 +5,11 @@
     <string name="apple_link">https://newsapi.org/v2/everything?q=apple&amp;from=2018-06-05&amp;to=2018-06-05&amp;sortBy=popularity&amp;apiKey=ede7912cd5154b478f22f80a8bb1a65a</string>
     <string name="tech_link">https://newsapi.org/v2/top-headlines?sources=techcrunch&amp;apiKey=ede7912cd5154b478f22f80a8bb1a65a</string>
 
+    <string name="business_rlink">top-headlines?country=us&amp;category=business&amp;apiKey=ede7912cd5154b478f22f80a8bb1a65a</string>
+    <string name="bitcoin_rlink">everything?q=bitcoin&amp;sortBy=publishedAt&amp;apiKey=ede7912cd5154b478f22f80a8bb1a65a</string>
+    <string name="apple_rlink">everything?q=apple&amp;from=2018-06-05&amp;to=2018-06-05&amp;sortBy=popularity&amp;apiKey=ede7912cd5154b478f22f80a8bb1a65a</string>
+    <string name="tech_rlink">top-headlines?sources=techcrunch&amp;apiKey=ede7912cd5154b478f22f80a8bb1a65a</string>
+
     <string name="title_activity_web">WebActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>

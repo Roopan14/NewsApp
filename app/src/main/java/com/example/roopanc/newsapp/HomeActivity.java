@@ -30,29 +30,35 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if (view == bCardView)
+        int id = view.getId();
+        Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
+
+        switch (id)
         {
-            Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
-            intent.putExtra(NEWS_LINK, getString(R.string.business_link));
-            startActivity(intent);
+            case R.id.businesscard:
+                //intent.putExtra(NEWS_LINK, getString(R.string.business_link));
+                intent.putExtra(NEWS_LINK, getString(R.string.business_rlink));
+                startActivity(intent);
+                break;
+
+            case R.id.applecard:
+                //intent.putExtra(NEWS_LINK, getString(R.string.apple_link));
+                intent.putExtra(NEWS_LINK, getString(R.string.apple_rlink));
+                startActivity(intent);
+                break;
+
+            case R.id.bitcoincard:
+                //intent.putExtra(NEWS_LINK, getString(R.string.bitcoin_link));
+                intent.putExtra(NEWS_LINK, getString(R.string.bitcoin_rlink));
+                startActivity(intent);
+                break;
+
+            case R.id.techcard:
+                //intent.putExtra(NEWS_LINK, getString(R.string.tech_link));
+                intent.putExtra(NEWS_LINK, getString(R.string.tech_rlink));
+                startActivity(intent);
+                break;
         }
-        else if (view == appleCard)
-        {
-            Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
-            intent.putExtra(NEWS_LINK, getString(R.string.apple_link));
-            startActivity(intent);
-        }
-        else if (view == bitcoinCard)
-        {
-            Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
-            intent.putExtra(NEWS_LINK, getString(R.string.bitcoin_link));
-            startActivity(intent);
-        }
-        else
-        {
-            Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
-            intent.putExtra(NEWS_LINK, getString(R.string.tech_link));
-            startActivity(intent);
-        }
+
     }
 }
